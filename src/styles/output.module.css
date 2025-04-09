@@ -1,0 +1,238 @@
+.output {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.output:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.output h2 {
+  color: #2d3436;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.copyButton {
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: #4a4a4a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.copyButton:hover {
+  background-color: #e9ecef;
+  transform: scale(1.05);
+}
+
+.copyButton:active {
+  transform: scale(0.95);
+}
+
+.output p {
+  color: #4a4a4a;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin: 0;
+  white-space: pre-wrap;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+.outputWrapper {
+  padding: 1rem;
+  background-color: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  max-height: 80vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyButton {
+  padding: 0.3rem 0.6rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.storyContainer {
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 1rem;
+  padding-right: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.storyText {
+  white-space: pre-wrap;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .output {
+    padding: 1.75rem;
+    width: 100%;
+    margin: 1.5rem auto;
+  }
+  
+  .outputWrapper {
+    max-height: 70vh;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .output {
+    padding: 1.5rem;
+    margin: 1.25rem auto;
+    border-radius: 12px;
+    width: 100%;
+  }
+  
+  .header {
+    margin-bottom: 1.25rem;
+  }
+  
+  .output h2 {
+    font-size: 1.3rem;
+  }
+  
+  .output p {
+    font-size: 1rem;
+    padding: 0.8rem;
+    line-height: 1.6;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .outputWrapper {
+    padding: 0.8rem;
+    max-height: 60vh;
+    width: 100%;
+  }
+  
+  .storyText {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .output {
+    padding: 1.25rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .header {
+    margin-bottom: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  
+  .output h2 {
+    font-size: 1.2rem;
+  }
+  
+  .copyButton {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+    align-self: flex-end;
+  }
+  
+  .output p {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+    line-height: 1.5;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .outputWrapper {
+    padding: 0.7rem;
+    max-height: 50vh;
+    width: 100%;
+  }
+  
+  .storyContainer {
+    margin-top: 0.8rem;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .storyText {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 320px) {
+  .output {
+    padding: 1rem;
+    margin: 0.8rem auto;
+    width: 100%;
+  }
+  
+  .output h2 {
+    font-size: 1.1rem;
+  }
+  
+  .output p {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .storyText {
+    font-size: 0.85rem;
+  }
+}
