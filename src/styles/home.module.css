@@ -180,6 +180,11 @@ h1 {
     width: 150px;
     height: 150px;
   }
+
+  .githubLink {
+    bottom: 15px;
+    right: 15px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -204,6 +209,13 @@ h1 {
 
   .colorChange {
     font-size: 1.1rem;
+  }
+
+  .githubLink {
+    bottom: 15px;
+    right: 15px;
+    padding: 7px 14px;
+    font-size: 0.85rem;
   }
 }
 
@@ -240,6 +252,13 @@ h1 {
   .splitLayout {
     gap: 1.5rem;
   }
+
+  .githubLink {
+    bottom: 10px;
+    right: 10px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 320px) {
@@ -259,6 +278,13 @@ h1 {
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
+  }
+
+  .githubLink {
+    bottom: 8px;
+    right: 8px;
+    padding: 5px 10px;
+    font-size: 0.75rem;
   }
 }
 
