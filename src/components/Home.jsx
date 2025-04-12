@@ -10,6 +10,9 @@ const Home = () => {
     <div className={styles.home}>
       <div className={styles.stars}></div>
       <div className={styles.magicOrb}></div>
+      <a href="https://github.com/samueldervishi1/story-ai" className={styles.githubLink} target="_blank" rel="noopener noreferrer">
+        GitHub Repository
+      </a>
       <div className={styles.splitLayout}>
         <div className={styles.leftSide}>
           <div className={styles.content}>
