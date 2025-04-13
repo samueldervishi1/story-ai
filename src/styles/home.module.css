@@ -212,8 +212,10 @@ h1 {
   }
 
   .githubLink {
-    bottom: 15px;
-    right: 15px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
     padding: 7px 14px;
     font-size: 0.85rem;
   }
@@ -254,8 +256,9 @@ h1 {
   }
 
   .githubLink {
-    bottom: 10px;
-    right: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     padding: 6px 12px;
     font-size: 0.8rem;
   }
@@ -302,7 +305,7 @@ html {
 }
 
 .githubLink {
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   right: 20px;
   background-color: #333;
@@ -313,7 +316,7 @@ html {
   font-weight: 500;
   font-size: 0.9rem;
   transition: all 0.3s ease;
-  z-index: 100;
+  z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 

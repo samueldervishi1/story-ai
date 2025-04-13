@@ -51,7 +51,7 @@ const Input = ({ setGeneratedStory }) => {
         value={storyPrompt}
         onChange={handleChange}
         placeholder="Enter your story prompt... (e.g., 'A magical forest where trees can talk')"
-        rows="8"
+        rows="5"
         cols="50"
         maxLength={maxLength}
       />
